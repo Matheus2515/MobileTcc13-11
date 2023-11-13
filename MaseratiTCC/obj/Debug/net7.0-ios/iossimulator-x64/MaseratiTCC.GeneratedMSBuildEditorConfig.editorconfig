@@ -1,0 +1,101 @@
+is_global = true
+build_property.TargetFramework = net7.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MaseratiTCC
+build_property.ProjectDir = D:\TCC-Masserati\MobiileTcc\MaseratiTCC\
+
+[D:/TCC-Masserati/MobiileTcc/MaseratiTCC/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MaseratiTCC.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/TCC-Masserati/MobiileTcc/MaseratiTCC/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MaseratiTCC.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[D:/TCC-Masserati/MobiileTcc/MaseratiTCC/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MaseratiTCC.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[D:/TCC-Masserati/MobiileTcc/MaseratiTCC/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MaseratiTCC.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/TCC-Masserati/MobiileTcc/MaseratiTCC/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MaseratiTCC.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/TCC-Masserati/MobiileTcc/MaseratiTCC/View/Cadastro/CadastroEstabelecimento.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MaseratiTCC.View.Cadastro.CadastroEstabelecimento.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Cadastro\CadastroEstabelecimento.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Cadastro\CadastroEstabelecimento.xaml
+
+[D:/TCC-Masserati/MobiileTcc/MaseratiTCC/View/Cadastro/CadastroView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MaseratiTCC.View.Cadastro.CadastroView.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Cadastro\CadastroView.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Cadastro\CadastroView.xaml
+
+[D:/TCC-Masserati/MobiileTcc/MaseratiTCC/View/Cadastro/TipoCadastro.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MaseratiTCC.View.Cadastro.TipoCadastro.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Cadastro\TipoCadastro.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Cadastro\TipoCadastro.xaml
+
+[D:/TCC-Masserati/MobiileTcc/MaseratiTCC/View/Login/LoginView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MaseratiTCC.View.Login.LoginView.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Login\LoginView.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Login\LoginView.xaml
+
+[D:/TCC-Masserati/MobiileTcc/MaseratiTCC/View/Options/BarbeariaView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MaseratiTCC.View.Options.BarbeariaView.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Options\BarbeariaView.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Options\BarbeariaView.xaml
+
+[D:/TCC-Masserati/MobiileTcc/MaseratiTCC/View/Options/ManicureView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MaseratiTCC.View.Options.ManicureView.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Options\ManicureView.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Options\ManicureView.xaml
+
+[D:/TCC-Masserati/MobiileTcc/MaseratiTCC/View/Options/SalaoView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MaseratiTCC.View.Options.SalaoView.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Options\SalaoView.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Options\SalaoView.xaml
+
+[D:/TCC-Masserati/MobiileTcc/MaseratiTCC/View/Senha/RecuperarSenhaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MaseratiTCC.View.Senha.RecuperarSenhaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Senha\RecuperarSenhaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Senha\RecuperarSenhaPage.xaml
+
+[D:/TCC-Masserati/MobiileTcc/MaseratiTCC/View/Senha/RecuperarSenhaPage2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MaseratiTCC.View.Senha.RecuperarSenhaPage2.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Senha\RecuperarSenhaPage2.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Senha\RecuperarSenhaPage2.xaml
+
+[D:/TCC-Masserati/MobiileTcc/MaseratiTCC/View/Senha/RecuperarSenhaPage3.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MaseratiTCC.View.Senha.RecuperarSenhaPage3.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Senha\RecuperarSenhaPage3.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Senha\RecuperarSenhaPage3.xaml

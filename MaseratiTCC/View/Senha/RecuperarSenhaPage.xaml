@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.View.Senhas.RecuperarSenhaPage"
+             NavigationPage.HasNavigationBar="False">
+
+    
+    
+    <ContentPage.Background>
+        <RadialGradientBrush >
+            <GradientStopCollection>
+                <GradientStop Color="#0f9be8" Offset="0.0" />
+                <GradientStop Color="#544ba0" Offset="1.0" />
+            </GradientStopCollection>
+        </RadialGradientBrush>
+    </ContentPage.Background>
+    
+    <StackLayout VerticalOptions="CenterAndExpand"
+                 Margin="16"
+                 Padding="16">
+        <Grid>
+            <VerticalStackLayout>
+                <ImageButton Source="setavoltar.png" WidthRequest="60" HeightRequest="60" Margin="10,-10,350,0" Command="{Binding DirecionarLoginCommand}"/>
+            </VerticalStackLayout>
+            <Image Source="logo.svg"
+             
+                   HeightRequest="220"
+                   WidthRequest="220"/>
+        </Grid>
+        <Label VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="White">
+
+        </Label>
+
+
+        <Label Text="Esqueceu a senha?" TextColor="White" Padding="50,10,50,20" FontSize="Title" FontAttributes="Bold"/>
+        <Label Text="Redefina agora mesmo em duas etapas rápidas" TextColor="White" Padding="15,20,0,30"  FontSize="Medium"/>
+        <Label Text="E-mail:" TextColor="White" Padding="5"/>
+        <Frame HeightRequest="45" CornerRadius="25">
+            <HorizontalStackLayout HeightRequest="45">
+                <Image Source="cadeado.png" WidthRequest="24" HeightRequest="24" VerticalOptions="Center"/>
+                <Entry Placeholder="Exemplo@Gmail.com" x:Name="txtExemplo" WidthRequest="270" VerticalOptions="Center" HorizontalTextAlignment="Center" ></Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Button Text="Avançar"
+                    x:Name="btnAvancar"
+                    Clicked="btnAvancar_Clicked"
+                    TextColor="Black"
+                    BackgroundColor="LightSteelBlue"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    Margin="50"
+                    CornerRadius="20"
+                    WidthRequest="200"
+                    Grid.Column="3"
+                    VerticalOptions="Center"
+                    >
+        </Button>
+
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MaseratiTCC.View.Cadastro.TipoCadastro"
+             Title="TipoCadastro"
+            NavigationPage.HasNavigationBar="False" 
+             >
+
+
+    <ContentPage.Background>
+        <RadialGradientBrush>
+            <GradientStopCollection>
+                <GradientStop Color="#0f9be8" Offset="0.0"/>
+                <GradientStop Color="#544ba0" Offset="1.0"/>
+
+            </GradientStopCollection>
+        </RadialGradientBrush>
+    </ContentPage.Background>
+
+
+    <StackLayout 
+        VerticalOptions="CenterAndExpand"
+        Margin="0,0,0,70"
+        Padding="0,0,0,70" >
+
+        <Grid>
+            <Image Source="logo.svg"
+                   HorizontalOptions="Center"
+                   HeightRequest="220"
+                   WidthRequest="220"/>
+        </Grid>
+
+
+
+        <Label Text="Cadastrar Como?" TextColor="White" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold" Margin="0,45,0,50"/>
+
+
+        <Frame BackgroundColor="#cbcbcb" CornerRadius="15" Padding="0,0,0,0" Margin="30,50,30,30">
+            <Picker Title="---Selecionar---" HorizontalTextAlignment="Center" WidthRequest="140" HeightRequest="40" Margin="0,5,0,0" ItemsSource="{Binding ListaTiposUsuarios}" ItemDisplayBinding="{Binding Descricao}" SelectedItem="{Binding TipoUsuarioSelecionado}" />
+        </Frame>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Button Text="Voltar"
+                    x:Name="btnVoltar"
+                    Clicked="btnVoltar_Clicked"
+                    TextColor="Black"
+                    BackgroundColor="LightSteelBlue"
+                    FontSize="Medium"
+                    Margin="30,120,0,0"
+                    CornerRadius="30"
+                    WidthRequest="150"
+                    Grid.Column="0">
+            </Button>
+
+            <Button Text="Avançar" 
+                    x:Name="btnAvancar"
+                    HorizontalOptions="Center"
+                    Clicked="btnAvancar_Clicked"
+                    TextColor="Black"
+                    BackgroundColor="LightSteelBlue"
+                    FontSize="Medium"
+                    Margin="0,120,30,0"
+                    CornerRadius="30"
+                    WidthRequest="150"
+                    Grid.Column="5">
+
+
+            </Button>
+
+        </Grid>
+
+    </StackLayout>
+
+
+</ContentPage>

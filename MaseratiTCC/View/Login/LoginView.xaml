@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MaseratiTCC.View.Login.LoginView"
+             Title="LoginView"
+             NavigationPage.HasNavigationBar="False"
+             >
+    
+    <ContentPage.Background>
+        <RadialGradientBrush >
+            <GradientStopCollection>
+                <GradientStop Color="#0f9be8" Offset="0.0" />
+                <GradientStop Color="#544ba0" Offset="1.0" />
+            </GradientStopCollection>
+        </RadialGradientBrush>
+    </ContentPage.Background>
+
+    <StackLayout VerticalOptions="CenterAndExpand"
+                Margin="16"
+                Padding="16"
+                 >
+        <Grid>
+            <Image Source="logo.svg"
+                   HeightRequest="220"
+                   WidthRequest="220"/>
+        </Grid>
+
+        <Label 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            TextColor="White"/>
+
+        <Label Text="E-mail:" TextColor="White" Padding="5" FontSize="Subtitle" FontAttributes="Italic" />
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="0">
+            <Entry Placeholder="Digite seu e-mail" x:Name="txtlogin" PlaceholderColor="Gray" Text="{Binding Email}"></Entry>
+        </Frame>
+
+        <Label Text="Senha:" TextColor="White" Padding="5" FontSize="Subtitle" FontAttributes="Italic" />
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="0">
+            <Entry Placeholder="Digite sua senha" x:Name="txtSenha" IsPassword="True" PlaceholderColor="Gray" Text="{Binding Senha}"></Entry>
+        </Frame>
+
+        <Button Text="Esqueceu a senha ?" 
+        x:Name="btnEsqueceu" 
+        Clicked="btnEsqueceu_Clicked"
+        Margin="10"
+        FontSize="11"
+        BackgroundColor="Transparent"
+        TextColor="White"
+        Command="{Binding DirecionarRecuperarSenhaCommand}"
+        HorizontalOptions="End"
+        ></Button>
+
+        <Button Text="Confirmar" 
+                x:Name="btnConfirmar" 
+                Clicked="btnConfirmar_Clicked"
+                TextColor="Black"
+                BackgroundColor="LightSteelBlue"
+                FontSize="Medium"
+                CornerRadius="10"
+                FontAttributes="Bold"
+                
+                Command="{Binding AutenticarCommand}"
+        ></Button>
+
+        <Button Text="Cadastrar-se" 
+                x:Name="btnCadastrar" 
+                Clicked="btnCadastrar_Clicked"
+                BackgroundColor="Transparent"
+                TextColor="White"
+                FontSize="Caption"
+                FontAttributes="Bold"
+         ></Button>
+    </StackLayout>
+</ContentPage>

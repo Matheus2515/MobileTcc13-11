@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MaseratiTCC.View.Cadastro.CadastroView"
+             Title="CadastroView"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Background>
+        <RadialGradientBrush>
+            <GradientStopCollection>
+                <GradientStop Color="#0f9be8" Offset="0.0"/>
+                <GradientStop Color="#544ba0" Offset="1.0"/>
+
+            </GradientStopCollection>
+        </RadialGradientBrush>
+    </ContentPage.Background>
+    <StackLayout 
+        VerticalOptions="CenterAndExpand"
+        Margin="7"
+        Padding="7" >
+
+        <Grid>
+            <Image Source="logo.svg"
+                   HeightRequest="220"
+                   WidthRequest="220"/>
+        </Grid>
+
+        <Label Text="Nome:" TextColor="White" Padding="5" FontSize="Subtitle"/>
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="0">
+            <Entry Placeholder="Exemplo" x:Name="txtNome" PlaceholderColor="Gray" Text="{Binding Nome}"></Entry>
+        </Frame>
+        <Label Text="Email:" TextColor="White" Padding="5" FontSize="Subtitle" />
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="0">
+            <Entry Placeholder="Exemplo@gmail.com" x:Name="txtEmail" PlaceholderColor="Gray" Text="{Binding Email}"></Entry>
+        </Frame>
+        <Label Text="Cpf:" TextColor="White" Padding="5" FontSize="Subtitle" />
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="0">
+            <Entry Placeholder="999.999.999-99" x:Name="txtCpf" PlaceholderColor="Gray" Text="{Binding Cpf}"></Entry>
+        </Frame>
+        <Label Text="Senha:" TextColor="White" Padding="5" FontSize="Subtitle" />
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="0,0,0,0">
+            <Entry Placeholder="Exemplo123" x:Name="txtSenha" IsPassword="True" PlaceholderColor="Gray" Text="{Binding Senha}"></Entry>
+        </Frame>
+
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Button Text="Voltar"
+                    x:Name="btnVoltar"
+                    Clicked="btnVoltar_Clicked"
+                    TextColor="Black"
+                    BackgroundColor="LightSteelBlue"
+                    FontSize="Medium"
+                    Margin="0,20,0,0"
+                    CornerRadius="30"
+                    WidthRequest="120"
+                    Grid.Column="0">
+            </Button>
+
+            <Button Text="Avançar"
+                    x:Name="btnAvancar"
+                    Clicked="btnAvancar_Clicked"
+                    TextColor="Black"
+                    BackgroundColor="LightSteelBlue"
+                    FontSize="Medium"
+                    Margin="0,20,0,0"
+                    CornerRadius="30"
+                    WidthRequest="120"
+                    Grid.Column="5"
+                    Command="{Binding RegistrarCommand}"
+                    >
+            </Button>
+
+        </Grid>
+
+    </StackLayout>
+</ContentPage>

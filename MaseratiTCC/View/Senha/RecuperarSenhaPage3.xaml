@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.View.Senhas.RecuperarSenhaPage3"
+                    NavigationPage.HasNavigationBar="False">
+
+
+    <ContentPage.Background>
+        <RadialGradientBrush >
+            <GradientStopCollection>
+                <GradientStop Color="#0f9be8" Offset="0.0" />
+                <GradientStop Color="#544ba0" Offset="1.0" />
+            </GradientStopCollection>
+        </RadialGradientBrush>
+    </ContentPage.Background>
+    <StackLayout VerticalOptions="CenterAndExpand"
+                 Margin="10"
+                 Padding="10">
+
+        <Grid>
+            <VerticalStackLayout>
+                <ImageButton Source="setavoltar.png" WidthRequest="60" HeightRequest="60" Margin="10,-10,350,0" Command="{Binding DirecionarRecuperarSenha3Command}" />
+            </VerticalStackLayout>
+            <Image Source="logo.svg"
+             
+                   HeightRequest="220"
+                   WidthRequest="220"/>
+        </Grid>
+        <Label VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="White">
+
+        </Label>
+
+        <Label Text="Crie uma nova senha" TextColor="White" Padding="50,10,10,10" FontSize="Title" FontAttributes="Bold"/>
+        <Label Text="Para proteger sua conta, escolha uma senha forte que você não usou antes e que tenha pelo menos um caracter especial." TextColor="White" Padding="15,20,0,30"  FontSize="Header"/>
+
+        <Label Text="Senha:" TextColor="White" Padding="5" FontSize="Subtitle"/>
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="0">
+            <Entry Placeholder="Nova senha" x:Name="txtNome" PlaceholderColor="Gray" ></Entry>
+        </Frame>
+        <Label Text="Confirmar Senha:" TextColor="White" Padding="5" FontSize="Subtitle"/>
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="0">
+            <Entry Placeholder="Confirme a senha" x:Name="txtConfirme" PlaceholderColor="Gray" ></Entry>
+        </Frame>
+
+        <Button Text="Finalizar"
+                    x:Name="btnFinalizar"
+                    Clicked="btnFinalizar_Clicked"
+                    TextColor="Black"
+                    BackgroundColor="LightSteelBlue"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    Margin="10"
+                    CornerRadius="20"
+                    WidthRequest="200"
+                    Grid.Column="3"
+                    VerticalOptions="Center">
+        </Button>
+    </StackLayout>
+
+</ContentPage>

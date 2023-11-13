@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.View.Senhas.RecuperarSenhaPage2"
+             NavigationPage.HasNavigationBar="False">
+
+
+    <ContentPage.Background>
+        <RadialGradientBrush >
+            <GradientStopCollection>
+                <GradientStop Color="#0f9be8" Offset="0.0" />
+                <GradientStop Color="#544ba0" Offset="1.0" />
+            </GradientStopCollection>
+        </RadialGradientBrush>
+    </ContentPage.Background>
+
+
+    <StackLayout VerticalOptions="CenterAndExpand"
+                 Margin="10"
+                 Padding="10">
+
+        <Grid>
+            <VerticalStackLayout>
+                <ImageButton Source="setavoltar.png" WidthRequest="60" HeightRequest="60" Margin="10,-10,350,0" Command="{Binding DirecionarRecuperarSenha2Command}" />
+            </VerticalStackLayout>
+            <Image Source="logo.svg"
+             
+                   HeightRequest="220"
+                   WidthRequest="220"/>
+        </Grid>
+        <Label VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="White">
+
+        </Label>
+        
+        <Label Text="Acabamos de enviar um código para seu e-mail" TextColor="White" Padding="50,0,0,10" FontSize="Title" FontAttributes="Bold"/>
+        <Label Text="Insira o código de verificação de 6 digitos enviado para o seu e-mail." TextColor="White" Padding="15,20,0,30"  FontSize="Header"/>
+        <Frame HeightRequest="45" CornerRadius="25">
+            <HorizontalStackLayout HeightRequest="45">
+                <Entry Placeholder="Código de 6 dígitos" x:Name="txtCodigo" WidthRequest="330" VerticalOptions="Center" HorizontalTextAlignment="Center"></Entry>
+            </HorizontalStackLayout>
+        </Frame>
+        <Button Text="Reenviar código" 
+        x:Name="btnReenviar" 
+        Clicked="btnReenviar_Clicked"
+        Margin="10"
+        FontSize="11"
+        BackgroundColor="Transparent"
+        TextColor="White"
+         FontAttributes="Bold"
+        HorizontalOptions="Center"
+        ></Button>
+
+
+        <Button Text="Enviar"
+                    x:Name="btnEnviar"
+                    Clicked="btnEnviar_Clicked"
+                    TextColor="Black"
+                    BackgroundColor="LightSteelBlue"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    Margin="0"
+                    CornerRadius="20"
+                    WidthRequest="200"
+                    Grid.Column="3"
+                    VerticalOptions="Center">
+        </Button>
+        <Label Text="Se não encontrar o e-mail na sua caixa de entrada, verifique a pasta de spam." TextColor="White" Padding="15,10,10,0"  FontSize="Header" />
+
+    </StackLayout>
+        
+    
+</ContentPage>
